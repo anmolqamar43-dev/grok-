@@ -244,3 +244,9 @@ async def health():
         "status": "ok",
         "model": MODEL
     }
+
+
+if not API_KEY:
+    raise ValueError(
+        "GROQ_API_KEY is missing..."
+    )
